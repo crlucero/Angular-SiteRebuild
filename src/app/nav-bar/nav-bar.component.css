@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -24,5 +26,11 @@ li a:hover {
 }
 
 nav {
-    
+    background-color: rgb(43, 30, 30);
+}
+
+h3 {
+    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+    color: rgb(231, 219, 219);
+    font-weight: 100;
 }

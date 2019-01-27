@@ -1,11 +1,64 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 
-ul {
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+nav {
+    background-color: rgb(43, 30, 30);
+}
+.navbar-header {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+h3 {
+    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+    color: rgb(231, 219, 219);
+    font-weight: 100;
+}
+
+.btn {
+  border-radius: 20px;
+  opacity: 1;
+  color: rgba(250, 248, 248, 0.918);
+  background-color: rgb(252, 69, 2)
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  padding: 20px;
+  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  color: rgb(231, 219, 219);
+  font-weight: 100;
+  
+}
+
+.topnav a:hover {
+  color: rgb(155, 58, 13);
+  text-decoration: none;
+}
+
+.topnav {
+  margin-left: 30%;
+}
+
+
+
+
+
+
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(43, 30, 30);
 }
 
 li {
@@ -18,19 +71,4 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-nav {
-    background-color: rgb(43, 30, 30);
-}
-
-h3 {
-    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
-    color: rgb(231, 219, 219);
-    font-weight: 100;
-}
+} */

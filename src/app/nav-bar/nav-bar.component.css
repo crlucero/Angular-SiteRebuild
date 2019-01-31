@@ -12,6 +12,8 @@ nav {
 .navbar-header {
   margin-top: 15px;
   margin-left: 25px;
+  float: left;
+  vertical-align: baseline;
 }
 
 h3 {
@@ -29,6 +31,8 @@ h3 {
 
 .topnav {
   overflow: hidden;
+  vertical-align: baseline;
+  float: left;
 }
 
 .topnav a {

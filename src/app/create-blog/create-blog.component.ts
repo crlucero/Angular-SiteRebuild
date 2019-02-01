@@ -18,6 +18,8 @@ export class CreateBlogComponent implements OnInit {
   submitForm(title: string, name: string, description: string) {
     let newBlog = new Blog(title, name, description);
     this.blogService.addBlog(newBlog);
+    console.log(newBlog);
+    
   }
 
 }

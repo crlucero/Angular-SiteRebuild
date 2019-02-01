@@ -1,2 +1,5 @@
 <h2>Blogs</h2>
-<p>Our blogs will be up soon</p>
+
+<div *ngFor="let blog of blogs" >
+    <h3> {{blog.title}} by {{blog.name}} </h3>
+</div>

@@ -8,11 +8,11 @@
         </div>
     </div>
     <div class="container blogs">
-        <div *ngFor="let blog of blogs" (click)="goToDetailPage(blog)" >
+        <div *ngFor="let blog of blogs | async" (click)="goToDetailPage(blog)" >
             <hr>
-            <h3> {{blog.title}} </h3>
+            <h3> {{blog.Title}} </h3>
             <p> {{blog.description}} </p>
-            by {{blog.name}}
+            <p> by {{blog.Name}} </p> 
         </div>
     </div>
 </div>

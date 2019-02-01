@@ -1,26 +1,28 @@
 import { Injectable } from '@angular/core';
 import { Blog } from './blog.model';
 import { BLOGS } from './mock-blogs';
-// import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database";
+import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database";
 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class BlogService {
-  // blogs: FirebaseListObservable<any[]>
+  blogs: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.blogs = database.list("blogs");
+  }
 
   // Returns all blogs
   getBlogs() {
-    return BLOGS;
+    return this.blogs;
   }
 
   // Grabs specific blog by it's id
   getBlogById(blogId: number) {
-    for(let i=0; i <= BLOGS.length; i++) {
-      if(BLOGS[i].id === blogId) {
+    for (let i = 0; i <= BLOGS.length; i++) {
+      if (BLOGS[i].id === blogId) {
         return BLOGS[i];
       }
     }

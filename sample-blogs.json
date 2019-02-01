@@ -1,19 +1,22 @@
 {
     "blogs": [
         {
+            "Title": "Development Ideas",
             "Name": " Naveen",
             "description": "You have an idea that you want to develop and you’re convinced that hiring an outsourced team is the best way to move forward. You spent hours researching about the best agencies to work with and shortlist a bunch of them. Now you need to finalize the one that will turn your idea into a reality. The next thing you need to do is create a solid project brief and share it with all the shortlisted agencies, to kick off discussions.",
             "id": "1"
         },
         {
-            "Name": "Dilate",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis odio ligula, placerat et consectetur quis, fermentum a sem. Curabitur finibus, turpis cursus gravida ultricies, risus diam semper lectus, ac tempor diam nulla a dui. Aliquam eget sem ac magna cursus pharetra sed non metus. Donec tempor leo quam, ut bibendum eros facilisis tempor. Aenean sodales metus non sem vehicula vestibulum. Nulla magna ex, molestie quis placerat quis, tincidunt eget diam. Sed quam leo, consectetur ac urna sodales, venenatis elementum arcu. Cras vel felis at nisi egestas consequat. Morbi varius libero purus, sit amet gravida ex interdum id.",
-            "id": "2"
+          "Title": "Outsourcing a team",
+          "Name": "Dilate",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis odio ligula, placerat et consectetur quis, fermentum a sem. Curabitur finibus, turpis cursus gravida ultricies, risus diam semper lectus, ac tempor diam nulla a dui. Aliquam eget sem ac magna cursus pharetra sed non metus. Donec tempor leo quam, ut bibendum eros facilisis tempor. Aenean sodales metus non sem vehicula vestibulum. Nulla magna ex, molestie quis placerat quis, tincidunt eget diam. Sed quam leo, consectetur ac urna sodales, venenatis elementum arcu. Cras vel felis at nisi egestas consequat. Morbi varius libero purus, sit amet gravida ex interdum id.",
+          "id": "2"
         },
         {
-            "Name": "Jimi Hendrix",
-            "description": "Nam sagittis leo id sapien imperdiet tempor. Curabitur augue nulla, gravida sit amet venenatis ac, varius vel augue. Phasellus auctor vulputate elit. Sed malesuada ante ut diam lobortis blandit. Curabitur ut enim aliquam libero bibendum blandit et id odio. Donec id mattis lorem. Cras eu facilisis sapien, ac auctor ante. Phasellus eget lectus et purus ornare tempus.",
-            "id": "3"
+          "Title": "Software Agencies",
+          "Name": "Jimi Hendrix",
+          "description": "Nam sagittis leo id sapien imperdiet tempor. Curabitur augue nulla, gravida sit amet venenatis ac, varius vel augue. Phasellus auctor vulputate elit. Sed malesuada ante ut diam lobortis blandit. Curabitur ut enim aliquam libero bibendum blandit et id odio. Donec id mattis lorem. Cras eu facilisis sapien, ac auctor ante. Phasellus eget lectus et purus ornare tempus.",
+          "id": "3"
         }
     ]
 }

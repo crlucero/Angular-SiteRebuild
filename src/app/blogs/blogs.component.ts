@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Blog } from '../blog.model';
 import { Router } from '@angular/router';
 import { BlogService } from '../blog.service';
+import { FirebaseListObservable } from "angularfire2/database";
+
 
 @Component({
   selector: "app-blogs",
@@ -10,11 +12,10 @@ import { BlogService } from '../blog.service';
   providers: [BlogService]
 })
 export class BlogsComponent implements OnInit {
-  blogs: Blog[];
+  blogs: FirebaseListObservable<any[]>;
 
-  constructor(private router: Router, 
-    private blogService: BlogService) { }
-  
+  constructor(private router: Router, private blogService: BlogService) {}
+
   // Tells page to list all blogs when page loads
   ngOnInit() {
     this.blogs = this.blogService.getBlogs();
@@ -24,6 +25,4 @@ export class BlogsComponent implements OnInit {
   goToDetailPage(clickedBlog: Blog) {
     this.router.navigate(["blogs", clickedBlog.id]);
   }
-
-
 }

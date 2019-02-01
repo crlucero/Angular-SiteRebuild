@@ -1,34 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { Blog } from '../blog.model';
 import { Router } from '@angular/router';
+import { BlogService } from '../blog.service';
 
 @Component({
   selector: "app-blogs",
   templateUrl: "./blogs.component.html",
-  styleUrls: ["./blogs.component.css"]
+  styleUrls: ["./blogs.component.css"],
+  providers: [BlogService]
 })
 export class BlogsComponent implements OnInit {
+  blogs: Blog[];
 
-  constructor(private router: Router) { }
-
-  blogs: Blog[] = [
-    new Blog(
-      "Development Ideas",
-      "Naveen",
-      "You have an idea that you want to develop and you’re convinced that hiring an outsourced team is the best way to move forward. You spent hours researching about the best agencies to work with and shortlist a bunch of them. Now you need to finalize the one that will turn your idea into a reality. The next thing you need to do is create a solid project brief and share it with all the shortlisted agencies, to kick off discussions.",
-      1
-    ),
-    new Blog(
-      "Outsourcing a team",
-      "Jimi Hendrix",
-      "You have an idea that you want to develop and you’re convinced that hiring an outsourced team is the best way to move forward. You spent hours researching about the best agencies to work with and shortlist a bunch of them. Now you need to finalize the one that will turn your idea into a reality. The next thing you need to do is create a solid project brief and share it with all the shortlisted agencies, to kick off discussions.",
-      2
-    )
-  ];
-
-  goToDetailPage(clickedBlog: Blog) {
-    this.router.navigate(['blogs', clickedBlog.id])
+  constructor(private router: Router, private blogService: BlogService) { }
+  
+  // Tells page to list all blogs when page loads
+  ngOnInit() {
+    this.blogs = this.blogService.getBlogs();
   }
 
-  ngOnInit() {}
+  // Click on blog to see details of blog
+  goToDetailPage(clickedBlog: Blog) {
+    this.router.navigate(["blogs", clickedBlog.id]);
+  }
+
+
 }

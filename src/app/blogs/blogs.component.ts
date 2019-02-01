@@ -12,7 +12,8 @@ import { BlogService } from '../blog.service';
 export class BlogsComponent implements OnInit {
   blogs: Blog[];
 
-  constructor(private router: Router, private blogService: BlogService) { }
+  constructor(private router: Router, 
+    private blogService: BlogService) { }
   
   // Tells page to list all blogs when page loads
   ngOnInit() {

@@ -24,9 +24,9 @@ export class BlogDetailComponent implements OnInit {
 
   //Logic to retrieve the specifc blog that BlogDetailComp should display from service
   ngOnInit() {
-    this.route.params.forEach(urlParameters => {
-      this.blogId = parseInt(urlParameters["id"]);
-    });
-    this.blogToDisplay = this.blogService.getBlogById(this.blogId);
+    // this.route.params.forEach(urlParameters => {
+    //   this.blogId = parseInt(urlParameters["id"]);
+    // });
+    // // this.blogToDisplay = this.blogService.getBlogById(this.blogId);
   }
 }

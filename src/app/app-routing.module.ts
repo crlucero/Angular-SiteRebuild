@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BlogsComponent } from "./blogs/blogs.component";
 import { HomeComponent } from "./home/home.component";
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
-
+import { CreateBlogComponent } from './create-blog/create-blog.component';
 const routes: Routes = [
   {
     path: '',
@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'blogs/:id',
     component: BlogDetailComponent
+  },
+  {
+    path: 'create',
+    component: CreateBlogComponent
   }
 
 ];

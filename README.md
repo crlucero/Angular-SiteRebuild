@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
-#### A program that is a rebuild of the NextOnTop's website
+#### A program that is a rebuild of the NextOnTop website.
 
 
 ## Description

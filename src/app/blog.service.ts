@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Blog } from './blog.model';
-import { BLOGS } from './mock-blogs';
 import { AngularFireDatabase, FirebaseListObservable } from "angularfire2/database";
 
 
@@ -19,12 +18,16 @@ export class BlogService {
     return this.blogs;
   }
 
+  addBlog(newBlog: Blog) {
+    this.blogs.push(newBlog);
+  }
+
   // Grabs specific blog by it's id
   getBlogById(blogId: number) {
-    for (let i = 0; i <= BLOGS.length; i++) {
-      if (BLOGS[i].id === blogId) {
-        return BLOGS[i];
-      }
-    }
+    // for (let i = 0; i <= BLOGS.length; i++) {
+    //   if (BLOGS[i].id === blogId) {
+    //     return BLOGS[i];
+    //   }
+    // }
   }
 }

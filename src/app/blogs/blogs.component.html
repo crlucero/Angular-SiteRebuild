@@ -7,6 +7,11 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="addBlog">
+            <a class="text-muted" [routerLink]="[ '/create']">Add your own blog post</a>
+        </div>
+    </footer>
     <div class="container blogs">
         <div *ngFor="let blog of blogs | async" (click)="goToDetailPage(blog)" >
             <hr>

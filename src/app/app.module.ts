@@ -11,6 +11,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { HomeComponent } from './home/home.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { CreateBlogComponent } from './create-blog/create-blog.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     HomeSlideComponent,
     BlogsComponent,
     HomeComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    CreateBlogComponent
   ],
   imports: [
     BrowserModule,

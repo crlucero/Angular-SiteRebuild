@@ -7,17 +7,18 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="addBlog">
-            <a class="text-muted" [routerLink]="[ '/create']">Add your own blog post</a>
-        </div>
-    </footer>
+    <div class="container">
+        <footer class="footer">
+            <div class="addBlog">
+                <h4><a [routerLink]="[ '/create']">Add your own blog post</a></h4> 
+            </div>
+        </footer>
+    </div>
     <div class="container blogs">
         <div *ngFor="let blog of blogs | async" (click)="goToDetailPage(blog)" >
             <hr>
-            <h3> {{blog.Title}} </h3>
+            <h3> {{blog.Title}}</h3> <p> by {{blog.Name}} </p> 
             <p> {{blog.description}} </p>
-            <p> by {{blog.Name}} </p> 
         </div>
     </div>
 </div>

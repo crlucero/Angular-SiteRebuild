@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+
+.padding-top {
+    padding-top: 30px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-bottom: 30px;
+}
+
+.section-dark {
+    background-color: #1a1817;
+    color: #FFFFFF;
+}
+
+h5 {
+    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+}
+
+.heading {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: medium;
+    font-weight: lighter;
+    color: #fff;
+}
+
+ul.featured {
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    font-weight: lighter;
+    color: #777;
+    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    list-style: none;
+    padding-left: 15px;
+}
+/* li:before {
+  content: "\25BA \0020";
+  font-size: 6px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  color: #fff;
+} */
+
+li.arrow-list {
+    background: url('https://cdn2.iconfinder.com/data/icons/fatcow/32x32/bullet_arrow_right.png') no-repeat left top;
+    height: 32px;
+    padding-left: 44px;
+    padding-top: 1px;
+
+}
+
+li.phone {
+    background: url('http://www.rydbergsmc.dk/CustomerData/Files/Images/Archive/67-ikoner/terlephone-white-icon_41587.png') no-repeat left top;
+    height: 54px;
+    padding-left: 44px;
+    padding-top: 3px;
+}
+
+li.email {
+    background: url('https://static.filehorse.com/icons-mac/messaging-and-chat/email-archiver-pro-icon-32.png') no-repeat left top;
+    height: 54px;
+    padding-left: 44px;
+    padding-top: 3px;
+}
+
+li.location {
+    background: url('https://cdn1.iconfinder.com/data/icons/Keyamoon-IcoMoon--limited/32/location.png') no-repeat left top;
+    height: 54px;
+    padding-left: 44px;
+    padding-top: 3px;
+}
+

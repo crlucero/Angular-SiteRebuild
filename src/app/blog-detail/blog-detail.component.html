@@ -1,5 +1,5 @@
 <div class="container">
-    <h3> {{blogToDisplay.title}} </h3>
-    <p> posted by {{blogToDisplay.name}} </p>
-    <h4> {{blogToDisplay.description}} </h4>
+    <h3>{{(blogToDisplay | async)?.title}}</h3>
+    <h4>{{(blogToDisplay | async)?.name}}</h4>
+    <p>{{(blogToDisplay | async)?.description}}</p>
 </div>

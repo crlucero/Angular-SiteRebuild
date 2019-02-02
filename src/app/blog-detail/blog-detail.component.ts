@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from "@angular/router";
 import { Location } from "@angular/common";
 import { Blog } from "../blog.model";
 import { BlogService } from "../blog.service";
+import { FirebaseObjectObservable } from "angularfire2/database";
 
 
 
@@ -13,8 +14,8 @@ import { BlogService } from "../blog.service";
   providers: [BlogService]
 })
 export class BlogDetailComponent implements OnInit {
-  blogId: number = null;
-  blogToDisplay: Blog;
+  blogId: string;
+  blogToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,9 +25,9 @@ export class BlogDetailComponent implements OnInit {
 
   //Logic to retrieve the specifc blog that BlogDetailComp should display from service
   ngOnInit() {
-    // this.route.params.forEach(urlParameters => {
-    //   this.blogId = parseInt(urlParameters["id"]);
-    // });
-    // // this.blogToDisplay = this.blogService.getBlogById(this.blogId);
+    this.route.params.forEach(urlParameters => {
+      this.blogId = urlParameters["id"];
+    });
+    this.blogToDisplay = this.blogService.getBlogById(this.blogId);
   }
 }

@@ -22,8 +22,8 @@ export class BlogsComponent implements OnInit {
   }
 
   // Click on blog to see details of blog
-  goToDetailPage(clickedBlog: Blog) {
-    // this.router.navigate(["blogs", clickedBlog.id]);
+  goToDetailPage(clickedBlog) {
+    this.router.navigate(["blogs", clickedBlog.$key]);
   }
 
 }

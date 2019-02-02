@@ -24,10 +24,6 @@ export class BlogService {
 
   // Grabs specific blog by it's id
   getBlogById(blogId: number) {
-    // for (let i = 0; i <= BLOGS.length; i++) {
-    //   if (BLOGS[i].id === blogId) {
-    //     return BLOGS[i];
-    //   }
-    // }
+    return this.database.object('blogs/' + blogId)
   }
 }

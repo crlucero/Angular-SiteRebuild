@@ -3,10 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
 #### A program that is a rebuild of the NextOnTop website.
+#### Link to live deployed website (https://siterebuild-6ed07.firebaseapp.com)
 
 
 ## Description
-This program is an application that will rebuild the NextOnTop website using Angular.
+This program is an application that will rebuild the NextOnTop website using Angular. When BLOGS is clicked on in navbar, users can see a list of posted blogs and enter there own blog if they wish to. 
 
 
 ## Setup/Installation Requirements to run program
@@ -37,7 +38,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Known Bugs
-N/A
+* Deployment does not currently take user to web-app.
+* When blog is posted, user name and blog title do not show up on blog list. Only preview of blog description shows up.
 
 ## Support and contact details
 

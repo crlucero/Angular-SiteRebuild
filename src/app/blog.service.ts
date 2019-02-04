@@ -23,7 +23,7 @@ export class BlogService {
   }
 
   // Grabs specific blog by it's id
-  getBlogById(blogId: number) {
+  getBlogById(blogId: string) {
     return this.database.object('blogs/' + blogId)
   }
 }

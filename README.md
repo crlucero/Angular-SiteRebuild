@@ -3,14 +3,26 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
 #### A program that is a rebuild of the NextOnTop website.
+
 #### Link to live deployed website (https://siterebuild-6ed07.firebaseapp.com)
 
-
 ## Description
-This program is an application that will rebuild the NextOnTop website using Angular. When BLOGS is clicked in navbar, users can see a list of posted blogs and enter their own blog if they wish to. 
 
+This program is an application that will rebuild the NextOnTop website using Angular. When BLOGS is clicked in navbar, users can see a list of posted blogs and enter their own blog if they wish to.
 
 ## Setup/Installation Requirements to run program
+
+- Clone from Github
+
+- Navigate to root project directory in the terminal.
+
+- Input npm install into the terminal to install dependancies.
+
+- Create your own api-keys.ts file in the app folder and populate it with your own firebase credentials.
+
+- Input ng build into the terminal.
+
+- Input ng serve to deploy the server to localhost, or firebase deploy to deploy to your own firebase hosting.
 
 ### Development server
 
@@ -36,27 +48,26 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
 ## Known Bugs
-* Deployment does not currently take user to web-app.
-* When blog is posted, user name and blog title do not show up on blog list. Only preview of blog description shows up.
+
+- Deployment does not currently take user to web-app.
+- When a specific blog is clicked on, and takes user to blog detail page, user name and title of blog do not show up on blog detail page. Only actual blog description. This error doesn't occur when a user manually adds a new blog to the site, meaning all details of the clicked on blog show up on the detail page if the user manually creates a blog on the site.
 
 ## Support and contact details
 
 For any quesitons contact me at: cristianjlucero32@gmail.com
 
-
 ## Technologies Used
 
-* Node Package Manager (tool that manages all external tools and libraries being used)
-* JavaScript
-* Karma (test runner)
-* Jasmine (testing framework)
-* Visual Studio Code (text editor)
-* CSS
-* HTML
-* Angular(Front-end framework)
-
+- Node Package Manager (tool that manages all external tools and libraries being used)
+- JavaScript
+- Karma (test runner)
+- Jasmine (testing framework)
+- Visual Studio Code (text editor)
+- CSS
+- HTML
+- Angular(Front-end framework)
+- Firebase (used for realtime database and website hosting)
 
 ### License
 

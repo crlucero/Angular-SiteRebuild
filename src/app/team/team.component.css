@@ -1,84 +1,83 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 
-
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 .section {
-    padding: 30px 0;
-    position: relative;
-    background-color: #f4f3ef;
-    background-image: linear-gradient(to bottom, transparent 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%);
+  padding: 30px 0;
+  position: relative;
+  background-color: #f4f3ef;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(112, 112, 112, 0) 60%,
+    rgba(186, 186, 186, 0.15) 100%
+  );
 }
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 img {
-    vertical-align: middle;
-    border-top-color: initial;
-    border-top-style: initial;
-    border-top-width: 0px;
-    border-right-color: initial;
-    border-right-style: initial;
-    border-right-width: 0px;
-    border-bottom-color: initial;
-    border-bottom-style: initial;
-    border-bottom-width: 0px;
-    border-left-color: initial;
-    border-left-style: initial;
-    border-left-width: 0px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
+  vertical-align: middle;
+  border-top-color: initial;
+  border-top-style: initial;
+  border-top-width: 0px;
+  border-right-color: initial;
+  border-right-style: initial;
+  border-right-width: 0px;
+  border-bottom-color: initial;
+  border-bottom-style: initial;
+  border-bottom-width: 0px;
+  border-left-color: initial;
+  border-left-style: initial;
+  border-left-width: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
 }
 
 h2 {
-    font-size: 3em;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-bottom: 15px;
-    margin-left: 0px;
-    padding: 5px;
-    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
-    color: rgb(110, 105, 105);
+  font-size: 3em;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  padding: 5px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  color: rgb(110, 105, 105);
 }
 
 p {
-    color: #9A9A9A;
-    font-size: 120%;
-    line-height: 1.4;
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-
+  color: #9a9a9a;
+  font-size: 120%;
+  line-height: 1.4;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
 }
 
 .col-sm-8 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
 }
-
-
-
-

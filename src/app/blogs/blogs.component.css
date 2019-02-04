@@ -1,5 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+
+.demo-header-image {
+  background-image: url(https://www.nextontop.com/assets/paper_img/homebg.jpg);
+  background-color: #111010;
+  text-align: center;
+}
+
+.demo-header .arena h3 {
+  margin-bottom: 20px;
+}
+
+h4#arena {
+  font-size: 1.825em;
+  line-height: 1.4;
+  margin: 20px 0 10px;
+  padding-bottom: 150px;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.1;
+  font-size: 4.5em;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+h1 {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-top: 100px;
+}
+
 p {
-    overflow:hidden;
+  overflow: hidden;
 }
 
 .footer {
@@ -11,20 +53,79 @@ p {
   padding: 15px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 30%;
+  margin-left: 33%;
   text-shadow: 0 1px 0px #fff;
   border-radius: 25px;
-  color: #FFFFFF;
-  background-color: #68B3C8;
+  color: #ffffff;
+  background-color: #68b3c8;
   opacity: 1;
 }
 
 h4 {
   font-size: 16px;
-  color: #FFFFFF;
-  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  color: #ffffff;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
 }
 
 a {
-  color: #FFFFFF
+  color: #ffffff;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #f4f3ef;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  padding: 5px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  color: rgb(110, 105, 105);
+}
+
+h5 {
+  font-size: 1.25em;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  padding: 5px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  color: rgb(110, 105, 105);
+}
+
+p {
+  color: #9a9a9a;
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+h2,
+h5,
+p {
+  cursor: pointer;
+}
+
+div {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
 }

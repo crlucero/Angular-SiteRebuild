@@ -1,5 +1,6 @@
-<div class="container">
-    <h3>{{(blogToDisplay | async)?.title}}</h3>
-    <h4>{{(blogToDisplay | async)?.name}}</h4>
-    <p>{{(blogToDisplay | async)?.description}}</p>
+<div class="container-fluid">
+  <h2>{{ (blogToDisplay | async)?.title }} <span> </span></h2>
+  <hr />
+  <h4>written by {{ (blogToDisplay | async)?.name }}</h4>
+  <p>{{ (blogToDisplay | async)?.description }}</p>
 </div>

@@ -1,25 +1,23 @@
-<div class="wrapper">
-    <div class="container">
-        <div class="demo-header demo-header-image">
-            <div class="arena">
-                <h1 class="title-uppercase">Blogs</h1>
-                <h3>The innovator's arena</h3>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <footer class="footer">
-            <div class="addBlog">
-                <h4><a [routerLink]="[ '/create']">Add your own blog post</a></h4> 
-            </div>
-        </footer>
-    </div>
-    <div class="container blogs">
-        <div *ngFor="let blog of blogs | async" (click)="goToDetailPage(blog)" >
-            <hr>
-            <h3> {{blog.Title}}</h3> <p> by {{blog.Name}} </p> 
-            <p> {{blog.description}} </p>
-        </div>
-    </div>
+<div class="demo-header demo-header-image">
+  <div class="arena">
+    <h1 class="title-uppercase">Blog</h1>
+    <h4 id="arena">The Innovator's Arena</h4>
+  </div>
+  <br />
 </div>
 
+<div class="container">
+  <footer class="footer">
+    <div class="addBlog">
+      <h4><a [routerLink]="['/create']">Add your own blog post</a></h4>
+    </div>
+  </footer>
+</div>
+<div class="container-fluid">
+  <div *ngFor="let blog of (blogs | async)" (click)="goToDetailPage(blog)">
+    <h2>{{ blog.Title }}</h2>
+    <h5>by {{ blog.Name }}</h5>
+    <p>{{ blog.description }}</p>
+    <hr />
+  </div>
+</div>

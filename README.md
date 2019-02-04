@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This program is an application that will rebuild the NextOnTop website using Angular. When BLOGS is clicked in navbar, users can see a list of posted blogs and enter their own blog if they wish to.
+This program is an application that will rebuild the NextOnTop website using Angular. When BLOGS is clicked in navbar, users can see a list of posted blogs and enter their own blog if they wish to. At the moment, BLOGS is the only link in the navbar that has a path to another page. The other navbar links do not have functionality because I wanted to focus on the creation of blogs.
 
 ## Setup/Installation Requirements to run program
 

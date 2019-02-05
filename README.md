@@ -50,7 +50,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Known Bugs
 
-- Deployment does not currently take user to web-app.
 - When a specific blog is clicked on, and takes user to blog detail page, user name and title of blog do not show up on blog detail page. Only actual blog description. This error doesn't occur when a user manually adds a new blog to the site, meaning all details of the clicked on blog show up on the detail page if the user manually creates a blog on the site.
 
 ## Support and contact details
